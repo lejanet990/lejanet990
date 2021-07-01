@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Take a Pledge</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <header> 
+      <img id = "logo" src = "assets/gardenbank.jpg" alt = "a sketch of a pumpkin with vines around the bottom and the words 'garden bank' written inside">
+
+    </header>
+        <nav>
+      <div class = "dropdown">
+        <button class = "dropbtn"> TAKE ACTION 
+          <i class="fal fa-angle-down"></i> <!--fal fa angle down creates the little down arrow next to the dropdown. The i tag formats idiomatic text and is usually used to italicize--> 
+        </button>
+        <div class = "dropdown-content">
+          <a href = "taleadership.html"> ORGANIZE</a>
+          <a href = "tamyexperience.html"> MY EXPERIENCE</a>
+          <a href = "tapledge.html">TAKE A PLEDGE</a>
+          <a href = "tavolunteer.html">VOLUNTEER</a>
+        </div>
+      </div>
+      <a href = "about.html"> A B O U T  </a>
+      <a href = "index.html"> H O M E </a>
+    </nav>  
+
+    <main id = "pledge-page"> 
+    
+    <div id = "pledge-container">
+      <h1> P L E D G E</h1>
+      <h2> Sign a pledge to fight to end food insecurity! </h2>
+      <p> Your name: <input type = "text" id = "userName" ></p>
+      <p> Your state: <input type = "text" id = "userState"></p>
+      <button id = "generatePledge"> Generate Pledge!</button>
+
+      <p id = "pledgeText"> </p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
