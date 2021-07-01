@@ -1,0 +1,251 @@
+h1{
+  text-align: center; font-family: Lucida Sans;
+}
+
+h3, h4{
+  text-align: center; font-family: Lucida Sans;
+}
+
+p{
+  font-family:Lucida  Sans;
+ }
+/*home page*/
+#homepageimage{
+  width:100%;
+}
+#homepageblurb{
+  text-align:center; font-family: Lucida Sans;
+}
+
+/*about page*/
+.resources{
+  text-align: center;
+}
+
+.flex-container2{
+  display: flex;
+  justify-content: space-around; /*adds space inbetween the flex items*/
+  flex-direction: row;
+  flex-wrap: nowrap; padding: 2em;
+}
+
+/*my experience page*/
+#myPhotos{
+  border-radius: 50%; border: 8px solid black;
+  width: 300px; height: 300px; display: block; margin-left:  auto; margin-right: auto;
+}
+
+.flex-container1{
+  display: flex;
+  justify-content: space-around; /*adds space inbetween the flex items*/
+  flex-direction: row;
+  flex-wrap: nowrap; padding: 1em;
+}
+
+/*media query so images wrap*/
+@media screen and (max-width: 900px){
+  .flex-container1{
+    flex-wrap: wrap;
+  }
+}
+
+
+/*STYLE THE NAVBAR*/
+nav{
+  overflow: hidden;
+  background-color: #854D27;
+  font-family: Lucida Sans; align-items: center;
+}
+/*links in the navigation bar*/
+nav a{
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*dropdown container*/
+.dropdown{
+  float: right;
+  overflow: hidden;
+}
+
+/*dropdown button*/
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+nav a:hover, .dropdown:hover .dropbtn{
+  background-color: #E6AA68;
+  color:black;
+}
+
+/*dropdown content*/
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* hide dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#logo{
+  display:block; width: 250px; height: 170px; margin-left: auto; margin-right: auto; padding: 1em
+}
+
+/*slideshow*/
+.slideshow-container{
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+/*hide the slideshow images by default*/
+.mySlides{
+  display: none;
+}
+
+/*next and previous buttons*/
+.prev, .next{
+  cursor: pointer; 
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  width: auto;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+/*position next button to the right*/
+.next{
+  right: 0;
+}
+/*on hover, have next prev buttons turn a little darker*/
+.next:hover, .prev:hover{
+  background-color: rgba(0,0,0,0.4);
+}
+
+/*caption text*/
+.text{
+  color: white ;
+  background-color:  rgba(0,0,0,0.6);
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%; text-align: center;
+}
+
+/* number text*/
+.numbertext{
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*dots*/
+.dot{
+  cursor: pointer;
+  height: 15px; width: 15px; margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background color 0.6s ease;
+}
+
+.active,.dot:hover{
+  background-color: black;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*pledge page*/
+#pledge-page{
+  background-image: url("https://cdn.pixabay.com/photo/2020/04/06/11/22/seedling-5009286_960_720.jpg");
+   /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#pledge-container{
+  max-width: 500px;
+  display: block;
+  background-color: #E6AA68;
+  text-align: center;
+  margin-left: auto; margin-right: auto; padding: 3em;
+}
+
+#generatePledge{
+  font-family: Times New Roman; border-radius: 0%; outline: none; background-color: whitesmoke; 
+  width: 30%; height: 20%;
+}
+
+/*volunteer page*/
+.flex-container3{
+  display: flex;
+  justify-content: space-around; /*adds space inbetween the flex items*/
+  flex-direction: row;
+  flex-wrap: nowrap; padding: 3em;
+}
+
+.volunteerimg{
+  width: 320px; height: 240px;
+}
+.hasbackgd{
+  background-color: #E6AA68;
+}
+
+.map{
+  text-align: center;
+}
