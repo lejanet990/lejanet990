@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>About</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <header> 
+      <img id = "logo" src = "assets/gardenbank.jpg" alt = "a sketch of a pumpkin with vines around the bottom and the words 'garden bank' written inside">
+    </header>
+        <nav>
+      <div class = "dropdown">
+        <button class = "dropbtn"> TAKE ACTION 
+          <i class="fal fa-angle-down"></i> <!--fal fa angle down creates the little down arrow next to the dropdown. The i tag formats idiomatic text and is usually used to italicize--> 
+        </button>
+        <div class = "dropdown-content">
+          <a href = "taleadership.html"> ORGANIZE</a>
+          <a href = "tamyexperience.html"> MY EXPERIENCE</a>
+          <a href = "tapledge.html">TAKE A PLEDGE</a>
+          <a href = "tavolunteer.html">VOLUNTEER</a>
+        </div>
+      </div>
+      <a href = "about.html"> A B O U T  </a>
+      <a href = "index.html"> H O M E </a>
+    </nav> 
+
+    <main> 
+    
+      <!--code for creating a slideshow--> 
+      <div class = "slideshow-container">
+        <!--each slide has an iamge, caption text, and number showing out of the total number of slides it is-->
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="assets/hungry.jpg" style="width:100%">
+          <div class="text">In Arkansas, 1 in 4 children are food insecure. 1 in 6 people experience some form of food insecurity. </div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="assets/emptyfridge.png" style="width:100%">
+          <div class="text">COVID-19 has increased mobile pantry demand in NWA by ~200 households a week.</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="assets/cannedfood.jpg" style="width:100%">
+          <div class="text">$1 can buy up to 8 meals.</div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="assets/bread.jpg" style="width:100%">
+          <div class="text">Rates of food insecurity are highest among people of color due to systemic racial injustice.</div>
+        </div>
+        
+        <!-- Next and previous buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+    
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+
+
+    <div class = "flex-container2">
+      <div>
+        <iframe width="560" height="315" margin = "2em" src="https://www.youtube.com/embed/SZtaqscNyDc" alt = "a video by the NWA food bank about their teaching garden" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div>
+      <h3> What is food insecurity? </h3>
+      <p>Food insecurity is a lack of consistent access to enough food for a healthy life. Food insecurity has many different causes: job loss, food desert, homelessness, dietary restrictions, and financial hardship are just a few. Food insecurity can be temporary or long-term, and many people often only need assistance for a few weeks. Especially due to the pandemic, more people need short-term food assistance between the time they are laid off and when they find a new job.  </p>
+      
+      <p> The US Department of Agriculture estimates that 30-40% of food produced annually in the US is wasted.We could elimate food insecurity if all wasted food made it to the right hands in time. Despite being a developed, high-income country, the United States still struggles with tremendous amounts of food insecurity.</p> 
+      </div>
+    </div>
+    <h3> How do food banks help? </h3>
+    <p> Food banks help by storing food and distributing to people in the community. Sometimes members of the community must show demonstrated need in order to qualify to get food, but most food banks also have a mobile pantry or way for people to receive food without providing proof. </p>
+    <p> For example, at the NWA Food Bank, anyone can stop at a monthly mobile food pantry to pick up a blue box, but in order to receive more food, one has to qualify. In addition, the NWA Food Bank works with multiple partner agencies such as businesses, churches, and schools which store food and distribute it at various locations. </p>
+    <p> Food banks can also work closely with local school districts to fill school pantries which in turn host their own food drives and outreach programs.</p>
+    <p> Finally, the NWA food bank also reaches out to first responders. Police are able to keep a few boxes of food in their patrol cars and distribute those to the homeless population. In addition, the food bank creates gluten-free and dairy-free boxes for people just out of the hospital with dietary restricitons in order to get them on the right path.</p>
+    <h3> What is a teaching garden?</h3>
+    <p> A teaching garden is any type of community or school garden where people can come and volunteer while simultaneously learning about biology, plants, and nutrition. In schools, a teaching garden can be used by science classes and service learning classes to teach about responsibility, observation, and health. Often times with school gardens, all food grown gets sent straight to the school cafeteria! Likewise, with teaching gardens in food banks, community members can volunteer and all fresh food produced by the garden goes to the food bank. In addition, different partner agencies, businesses, and organizations can come into the garden to work and  learn!</p>
+    <h3> Let's incorporate more teaching gardens into food banks and schools!! <h3>
+    
+    <h3> Where can I learn more? </h3>
+    <div class = "resources">
+    <a href = "https://www.feedingamerica.org/"><img class= "learnmore" src = "assets/image logos/feedingamerica.JPG" alt= "feeding america logo"></a>
+    <a href = "https://arhungeralliance.org/"><img  class = "learnmore" src = "assets/image logos/arhungeralliance.JPG" alt = "arkansas hunger alliance logo"></a>
+    <a href = "https://www.nwafoodbank.org/"><img  class = "learnmore" src = "assets/image logos/nwafoodbank.JPG" alt = "Northwest Arkansas Food Bank logo"></a>
+    </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
